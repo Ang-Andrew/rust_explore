@@ -3,7 +3,12 @@ name = "mongodb_test"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies.mongodb]
+version = "2.3.0"
+default-features = false
+features = ["async-std-runtime"]
+
 [dependencies]
 actix-web = "4"
-mongodb = "2"
 serde = { version = "1", features = ["derive"] }
+tokio = "1.21.2"

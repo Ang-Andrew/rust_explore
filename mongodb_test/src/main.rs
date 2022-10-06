@@ -1,4 +1,5 @@
 use mongodb::{bson::doc, options::ClientOptions, Client};
+
 #[tokio::main]
 async fn main() -> mongodb::error::Result<()> {
     // Parse your connection string into an options struct
